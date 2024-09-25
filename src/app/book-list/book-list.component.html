@@ -1,1 +1,17 @@
-<p>book-list works!</p>
+
+
+
+<div>
+  <table>
+    <tbody>
+    <tr *ngFor="let item of bookItems" (click)="selectBookItem(item)">
+      <td>{{ item.id}}</td>
+      <td>{{ item.bookName }}</td>
+      <td>{{ item.type }}</td>
+      <td>{{ item.authorName}}</td>
+      <td>{{ item.sale }}</td>
+    </tr>
+    </tbody>
+  </table>
+  <app-book-list-item *ngFor="let item of bookItems" [item]="item"></app-book-list-item>
+</div>
