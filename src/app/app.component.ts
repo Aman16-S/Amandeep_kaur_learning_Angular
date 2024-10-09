@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {book} from "../book";
+import {book} from "./Shared/Models/book";
 import {NgForOf} from "@angular/common";
 
 @Component({
