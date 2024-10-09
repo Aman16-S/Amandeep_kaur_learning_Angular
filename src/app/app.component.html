@@ -1,2 +1,14 @@
-<app-book-list-item></app-book-list-item>
-<app-book-list></app-book-list>
+<div class="nav-bar">
+  <nav>
+    <a routerLink="/books" routerLinkActive="active">Book List</a>
+    <a routerLink="/modify-list-item" routerLinkActive="active">Modify Book</a>
+  </nav>
+</div>
+
+
+<div class="app-container">
+
+
+  <!--router outlet to display routed components -->
+  <router-outlet></router-outlet>
+</div>
