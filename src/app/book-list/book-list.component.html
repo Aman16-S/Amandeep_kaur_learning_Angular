@@ -11,12 +11,12 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let book of books" (click)="selectStudent(student)">
-      <td>{{ student.id }}</td>
-      <td>{{ student.firstName }}</td>
-      <td>{{ student.lastName }}</td>
-      <td>{{ student.department }}</td>
-      <td>{{ student.isAdmin ? 'Yes' : 'No' }}</td>
+    <tr *ngFor="let book of books" (click)="selectbook(book)">
+      <td>{{ book.id }}</td>
+      <td>{{ book.bookName }}</td>
+      <td>{{ book.type }}</td>
+      <td>{{ book.authorName }}</td>
+      <td>{{ book.sale ? 'Yes' : 'No' }}</td>
     </tr>
     </tbody>
   </table>

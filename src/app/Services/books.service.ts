@@ -10,7 +10,7 @@ import {book} from "../Shared/Models/book";
 export class bookService {
 
   getStudents(): Observable<book[]>{
-    return of(books); //Return and observable that emits mock student data
+    return of(books);
   }
 
 }
