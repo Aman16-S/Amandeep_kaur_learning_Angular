@@ -15,6 +15,5 @@ export class BookListItemComponent {
    * that can receive data from a parent
    * ? says it is optional
    */
-  @Input() item: any;
-  protected readonly books = books;
+
 }
