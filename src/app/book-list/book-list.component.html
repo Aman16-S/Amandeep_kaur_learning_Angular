@@ -11,7 +11,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let book of books" (click)="selectbook(book)">
+    <tr *ngFor="let book of books" [routerLink] = "['/books', book.id]"">
       <td>{{ book.id }}</td>
       <td>{{ book.bookName }}</td>
       <td>{{ book.type }}</td>
