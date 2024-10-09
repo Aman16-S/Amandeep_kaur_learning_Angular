@@ -33,9 +33,9 @@ export class BookListComponent implements OnInit {
 
   }
 
-  selectedBook?: book;
+  selectedbook?: book;
   selectStudent(student: book): void {
-    this.selectedBook = book;
+    this.selectedbook = book;
   }
 
 }
