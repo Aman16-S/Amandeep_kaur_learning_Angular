@@ -3,5 +3,5 @@ export interface book {
   bookName: string,
   type: string,
   authorName: string,
-  sale : number;
+  sale?: Boolean
 }

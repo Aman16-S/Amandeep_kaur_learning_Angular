@@ -1,19 +1,10 @@
-import { Component, Input } from '@angular/core';
-import {NgClass, NgForOf, NgIf} from "@angular/common";
-
-let input = Input();
-
-
-
-
+import {Component, Input} from '@angular/core';
+import {books} from "../Shared/Models/book";
+import {NgIf} from "@angular/common";
 @Component({
   selector: 'app-book-list-item',
   standalone: true,
-  imports: [
-    NgIf,
-    NgForOf,
-    NgClass
-  ],
+  imports: [NgIf],
   templateUrl: './book-list-item.component.html',
   styleUrl: './book-list-item.component.css'
 })

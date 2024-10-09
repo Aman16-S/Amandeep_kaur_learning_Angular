@@ -1,6 +1,8 @@
-<div class="book-item" style="border: 2px solid orange; padding: 10px; margin:10px;" >
-  <h3>{{item?.bookName}}</h3>
-  <p>{{item?.type}}</p>
-  <p>{{item.authorName}}</p>
-  <p>{{item.sale}}</p>
+<div *ngIf="book" class="student-detail">
+  <h2>Student Details</h2>
+  <p><strong>ID:</strong> {{ student.id }}</p>
+  <p><strong>First Name:</strong> {{ student.firstName }}</p>
+  <p><strong>Last Name:</strong> {{ student.lastName }}</p>
+  <p><strong>Department:</strong> {{ student.department }}</p>
+  <p><strong>Admin:</strong> {{ student.isAdmin ? 'Yes' : 'No' }}</p>
 </div>
