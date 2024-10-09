@@ -1,6 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {books} from "../Shared/Models/book";
 import {NgIf} from "@angular/common";
+import {books} from "../Shared/mockbook";
 @Component({
   selector: 'app-book-list-item',
   standalone: true,
@@ -15,4 +16,5 @@ export class BookListItemComponent {
    * ? says it is optional
    */
   @Input() item: any;
+  protected readonly books = books;
 }

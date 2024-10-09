@@ -1,8 +1,8 @@
-<div *ngIf="book" class="student-detail">
+<div *ngIf="books" class="book-list-item">
   <h2>Student Details</h2>
-  <p><strong>ID:</strong> {{ student.id }}</p>
-  <p><strong>First Name:</strong> {{ student.firstName }}</p>
-  <p><strong>Last Name:</strong> {{ student.lastName }}</p>
-  <p><strong>Department:</strong> {{ student.department }}</p>
-  <p><strong>Admin:</strong> {{ student.isAdmin ? 'Yes' : 'No' }}</p>
+  <p><strong>ID:</strong> {{ books.id }}</p>
+  <p><strong>Name:</strong> {{ books.bookName }}</p>
+  <p><strong>Type:</strong> {{ books.type }}</p>
+  <p><strong>Author Name:</strong> {{ books.department }}</p>
+  <p><strong>Sale:</strong> {{ books.sale ? 'Yes' : 'No' }}</p>
 </div>
